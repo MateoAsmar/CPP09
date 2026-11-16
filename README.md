@@ -38,7 +38,7 @@ make
 ./btc input.txt
 ~~~
 
-The program reads its reference exchange-rate database from data.csv in the current working directory and reads requested date/value rows from the file passed as its argument. The repository currently does not include ex00/data.csv, so provide that database before running.
+The program reads its reference exchange-rate database from data.csv in the current working directory and reads requested date/value rows from the file passed as its argument.
 
 The reference database is a comma-separated file with a header and rows in date,exchange_rate form. The input file uses a header followed by rows in date | value form. For each input value, the program finds the rate for that date or the closest available earlier date, then prints the converted amount. Values below zero or above 1,000 are rejected.
 
